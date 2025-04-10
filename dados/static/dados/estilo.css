@@ -1,0 +1,51 @@
+body {
+    background-color: #cdd9e2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 30px;
+    color: #333;
+}
+
+h1 {
+    color: #1e90ff;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 60px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0b76d1;
+}
+
+.dado {
+    font-size: 60px;
+    margin: 15px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dado:hover {
+    transform: scale(1.1);
+}

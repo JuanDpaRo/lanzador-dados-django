@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lanzador de Dados</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dados/estilo.css' %}">
+</head>
+<body>
+    <h1>Lanzador de Dados 🎲</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label for="cantidad">Cantidad de dados:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="{{ cantidad }}">
+        <button type="submit">Lanzar</button>
+    </form>
+
+    {% if dados_visuales %}
+        <div>
+            {% for cara in dados_visuales %}
+                <span class="dado">{{ cara }}</span>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
+
+
